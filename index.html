@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery Sangkar Indonesia</title>
+<!-- Tailwind Output CSS -->
+<link href="./assets/css/output.css" rel="stylesheet"/>
+<!-- BoxIcons -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body class="font-sans">
+<header class="navbar fixed z-[100] flex justify-between items-center w-full transition-all duration-300 ease-in-out" id="header">
+<div class="w-full lg:max-w-[1272px] lg:mx-auto flex justify-between items-center text-white py-4 lg:py-5 transition-all duration-300 ease-in-out" id="header-content-wrapper">
+<div class="navbar-start flex justify-between items-center w-full lg:w-auto">
+<a class="text-2xl lg:text-4xl font-semibold font-serif px-3 lg:px-4" href="/">Gallery <span class="text-primary">Sangkar</span> Indonesia</a>
+<nav class="dropdown">
+<div class="btn btn-ghost lg:hidden" role="button" tabindex="0">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h8m-8 6h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 right-0 shadow" tabindex="0">
+<li>
+<a class="font-medium text-black" href="/#beranda">Beranda</a>
+</li>
+<li>
+<a class="font-medium text-black" href="/#produk">Produk</a>
+</li>
+<li>
+<a class="font-medium text-black" href="/#tentang-kami">Tentang Kami</a>
+</li>
+<li>
+<a class="font-medium text-black" href="/#temukan-kami">Temukan Kami</a>
+</li>
+</ul>
+</nav>
+</div>
+<nav class="navbar-center hidden lg:flex">
+<ul class="menu menu-horizontal px-1 gap-8">
+<li>
+<a class="font-medium" href="/#beranda"><i class="bx bx-home-alt text-lg"></i> Beranda</a>
+</li>
+<li>
+<a class="font-medium" href="/#produk"><i class="bx bx-shopping-bag text-lg"></i> Produk</a>
+</li>
+<li>
+<a class="font-medium" href="/#tentang-kami"><i class="bx bx-info-circle text-lg"></i> Tentang Kami</a>
+</li>
+<li>
+<a class="font-medium" href="/#temukan-kami"><i class="bx bx-map-pin text-lg"></i> Temukan Kami</a>
+</li>
+</ul>
+</nav>
+<!-- <div class="navbar-end hidden md:hidden lg:flex lg:w-fit">
+          <a class="btn bg-black text-white w-40">Kontak Kami</a>
+        </div> -->
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero min-h-screen gsi-healet-hero" id="beranda" style="background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?q=80&amp;w=2669&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+<!-- Hero Overlay -->
+<div class="hero-overlay bg-opacity-60"></div>
+<!-- Hero Content -->
+<div class="hero-content w-full justify-start text-neutral-content">
+<div class="max-w-md lg:max-w-xl"><p class="gsi-hero-kicker">Gallery Sangkar Indonesia</p>
+<h1 class="mb-5 font-serif text-5xl text-white md:text-6xl lg:text-8xl font-bold">Sangkar Burung<br/><span class="text-primary">Berkualitas</span></h1>
+<p class="mb-5">Temukan koleksi sangkar burung dengan pilihan warna menarik, material kuat, dan tampilan rapi untuk kebutuhan harian maupun koleksi Anda.</p>
+<a class="btn btn-primary text-white px-12 py-4 gsi-hero-link" href="#produk">Lihat Produk Kami <i class="bx bx-right-arrow-alt text-lg"></i></a>
+</div>
+</div>
+</section>
+<!-- End Hero Section -->
+<!-- Produk Section -->
+<!--
+      PANDUAN EDIT PRODUK SINGKAT:
+      1. Semua produk ada di section <section id="produk"> pada file index.html.
+      2. Untuk ganti nama produk: ubah teks pada <h3 class="card-title ..."> di dalam card produk.
+      3. Untuk ganti harga: ubah teks Rp... di bawah nama produk.
+      4. Untuk ganti nomor WhatsApp: ubah angka pada href="https://wa.me/6282142853691...".
+      5. Untuk ganti foto default: ubah src="./assets/images/...jpg" pada <figure> card produk.
+      6. Untuk opsi warna: tambah/hapus <li> di bagian "Pilihan Warna". Nama class warna harus sama dengan nama file gambar di assets/images.
+      7. Contoh: class "sangkar-besi-merah" akan otomatis mengambil gambar "assets/images/sangkar-besi-merah.jpg".
+    -->
+<section class="bg-base-100 py-12 lg:py-24 px-12 lg:px-0" id="produk">
+<h1 class="text-5xl lg:text-6xl font-semibold font-serif text-center">Produk kami</h1>
+<div class="container grid grid-cols-1 xl:grid-cols-2 gap-8 mx-auto mt-12 lg:mt-20">
+<div class="card bg-base-100 shadow-xl group flex-col lg:flex-row" id="sangkar-besi">
+<figure class="relative lg:max-w-[50%] max-w-full w-full lg:min-w-[50%] min-w-full lf:rounded-es-[inherit] lg:rounded-se-none">
+<img alt="Sangkar Besi Berwarna" class="w-full h-full" src="./assets/images/sangkar-besi-biru-muda.jpg"/>
+</figure>
+<div class="card-body flex justify-between">
+<div>
+<h2 class="card-title mb-6">Pilihan Warna</h2>
+<ul class="flex gap-8 flex-wrap">
+<li class="sangkar-besi-pink">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-pink-500 rounded-full"></div>
+</div>
+<span class="font-medium">Pink</span>
+</button>
+</li>
+<li class="sangkar-besi-orange">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-yellow-500 rounded-full"></div>
+</div>
+<span class="font-medium">Orange</span>
+</button>
+</li>
+<li class="sangkar-besi-hijau">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-green-500 rounded-full"></div>
+</div>
+<span class="font-medium">Hijau</span>
+</button>
+</li>
+<li class="sangkar-besi-kuning">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-yellow-300 rounded-full"></div>
+</div>
+<span class="font-medium">Kuning</span>
+</button>
+</li>
+<li class="sangkar-besi-biru">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-blue-500 rounded-full"></div>
+</div>
+<span class="font-medium">Biru</span>
+</button>
+</li>
+<li class="sangkar-besi-merah">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-red-500 rounded-full"></div>
+</div>
+<span class="font-medium">Merah</span>
+</button>
+</li>
+<li class="sangkar-besi-hitam">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-black rounded-full"></div>
+</div>
+<span class="font-medium">Hitam</span>
+</button>
+</li>
+<li class="sangkar-besi-putih">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-slate-100 rounded-full"></div>
+</div>
+<span class="font-medium">Putih</span>
+</button>
+</li>
+</ul>
+</div>
+<div class="mt-2">
+<h3 class="card-title text-2xl mb-4">Sangkar Besi Berwarna</h3>
+<h2 class="text-primary text-3xl font-bold mb-6">Rp.299.000</h2>
+<a class="btn btn-primary text-white" href="https://wa.me/6282142853691?text=Saya%20ingin%20membeli%20sangkar"><i class="bx bxl-whatsapp text-lg"></i> Pesan via WhatsApp</a>
+</div>
+</div>
+</div><div class="card bg-base-100 shadow-xl group flex-col lg:flex-row" id="sangkar-kayu">
+<figure class="relative lg:max-w-[50%] max-w-full w-full lg:min-w-[50%] min-w-full lf:rounded-es-[inherit] lg:rounded-se-none">
+<img alt="Sangkar Kayu Berwarna" class="w-full h-full" src="./assets/images/sangkar-besi-hijau-muda.jpg"/>
+</figure>
+<div class="card-body flex justify-between">
+<div>
+<h2 class="card-title mb-6">Pilihan Warna</h2>
+<ul class="flex gap-8 flex-wrap">
+<li class="sangkar-besi-pink">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-pink-500 rounded-full"></div>
+</div>
+<span class="font-medium">Pink</span>
+</button>
+</li>
+<li class="sangkar-besi-orange">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-yellow-500 rounded-full"></div>
+</div>
+<span class="font-medium">Orange</span>
+</button>
+</li>
+<li class="sangkar-besi-hijau">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-green-500 rounded-full"></div>
+</div>
+<span class="font-medium">Hijau</span>
+</button>
+</li>
+<li class="sangkar-besi-kuning">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-yellow-300 rounded-full"></div>
+</div>
+<span class="font-medium">Kuning</span>
+</button>
+</li>
+<li class="sangkar-besi-biru">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-blue-500 rounded-full"></div>
+</div>
+<span class="font-medium">Biru</span>
+</button>
+</li>
+<li class="sangkar-besi-merah">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-red-500 rounded-full"></div>
+</div>
+<span class="font-medium">Merah</span>
+</button>
+</li>
+<li class="sangkar-besi-hitam">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-black rounded-full"></div>
+</div>
+<span class="font-medium">Hitam</span>
+</button>
+</li>
+<li class="sangkar-besi-putih">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-slate-100 rounded-full"></div>
+</div>
+<span class="font-medium">Putih</span>
+</button>
+</li>
+</ul>
+</div>
+<div class="mt-2">
+<h3 class="card-title text-2xl mb-4">Sangkar Kayu Berwarna</h3>
+<h2 class="text-primary text-3xl font-bold mb-6">Rp.199.000</h2>
+<a class="btn btn-primary text-white" href="https://wa.me/6282142853691?text=Saya%20ingin%20membeli%20sangkar"><i class="bx bxl-whatsapp text-lg"></i> Pesan via WhatsApp</a>
+</div>
+</div>
+</div><div class="card bg-base-100 shadow-xl group flex-col lg:flex-row" id="sangkar-premium">
+<figure class="relative lg:max-w-[50%] max-w-full w-full lg:min-w-[50%] min-w-full lf:rounded-es-[inherit] lg:rounded-se-none">
+<img alt="Sangkar Besi Premium" class="w-full h-full" src="./assets/images/sangkar-besi-merah.jpg"/>
+</figure>
+<div class="card-body flex justify-between">
+<div>
+<h2 class="card-title mb-6">Pilihan Warna</h2>
+<ul class="flex gap-8 flex-wrap">
+<li class="sangkar-besi-pink">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-pink-500 rounded-full"></div>
+</div>
+<span class="font-medium">Pink</span>
+</button>
+</li>
+<li class="sangkar-besi-orange">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-yellow-500 rounded-full"></div>
+</div>
+<span class="font-medium">Orange</span>
+</button>
+</li>
+<li class="sangkar-besi-hijau">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-green-500 rounded-full"></div>
+</div>
+<span class="font-medium">Hijau</span>
+</button>
+</li>
+<li class="sangkar-besi-kuning">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-yellow-300 rounded-full"></div>
+</div>
+<span class="font-medium">Kuning</span>
+</button>
+</li>
+<li class="sangkar-besi-biru">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-blue-500 rounded-full"></div>
+</div>
+<span class="font-medium">Biru</span>
+</button>
+</li>
+<li class="sangkar-besi-merah">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-red-500 rounded-full"></div>
+</div>
+<span class="font-medium">Merah</span>
+</button>
+</li>
+<li class="sangkar-besi-hitam">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-black rounded-full"></div>
+</div>
+<span class="font-medium">Hitam</span>
+</button>
+</li>
+<li class="sangkar-besi-putih">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-slate-100 rounded-full"></div>
+</div>
+<span class="font-medium">Putih</span>
+</button>
+</li>
+</ul>
+</div>
+<div class="mt-2">
+<h3 class="card-title text-2xl mb-4">Sangkar Besi Premium</h3>
+<h2 class="text-primary text-3xl font-bold mb-6">Rp.349.000</h2>
+<a class="btn btn-primary text-white" href="https://wa.me/6282142853691?text=Saya%20ingin%20membeli%20sangkar"><i class="bx bxl-whatsapp text-lg"></i> Pesan via WhatsApp</a>
+</div>
+</div>
+</div><div class="card bg-base-100 shadow-xl group flex-col lg:flex-row" id="sangkar-minimalis">
+<figure class="relative lg:max-w-[50%] max-w-full w-full lg:min-w-[50%] min-w-full lf:rounded-es-[inherit] lg:rounded-se-none">
+<img alt="Sangkar Besi Minimalis" class="w-full h-full" src="./assets/images/sangkar-besi-hitam.jpg"/>
+</figure>
+<div class="card-body flex justify-between">
+<div>
+<h2 class="card-title mb-6">Pilihan Warna</h2>
+<ul class="flex gap-8 flex-wrap">
+<li class="sangkar-besi-pink">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-pink-500 rounded-full"></div>
+</div>
+<span class="font-medium">Pink</span>
+</button>
+</li>
+<li class="sangkar-besi-orange">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-yellow-500 rounded-full"></div>
+</div>
+<span class="font-medium">Orange</span>
+</button>
+</li>
+<li class="sangkar-besi-hijau">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-green-500 rounded-full"></div>
+</div>
+<span class="font-medium">Hijau</span>
+</button>
+</li>
+<li class="sangkar-besi-kuning">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-yellow-300 rounded-full"></div>
+</div>
+<span class="font-medium">Kuning</span>
+</button>
+</li>
+<li class="sangkar-besi-biru">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-blue-500 rounded-full"></div>
+</div>
+<span class="font-medium">Biru</span>
+</button>
+</li>
+<li class="sangkar-besi-merah">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-red-500 rounded-full"></div>
+</div>
+<span class="font-medium">Merah</span>
+</button>
+</li>
+<li class="sangkar-besi-hitam">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-black rounded-full"></div>
+</div>
+<span class="font-medium">Hitam</span>
+</button>
+</li>
+<li class="sangkar-besi-putih">
+<button class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+<div class="w-full h-full bg-slate-100 rounded-full"></div>
+</div>
+<span class="font-medium">Putih</span>
+</button>
+</li>
+</ul>
+</div>
+<div class="mt-2">
+<h3 class="card-title text-2xl mb-4">Sangkar Besi Minimalis</h3>
+<h2 class="text-primary text-3xl font-bold mb-6">Rp.249.000</h2>
+<a class="btn btn-primary text-white" href="https://wa.me/6282142853691?text=Saya%20ingin%20membeli%20sangkar"><i class="bx bxl-whatsapp text-lg"></i> Pesan via WhatsApp</a>
+</div>
+</div>
+</div></div>
+</section>
+<!-- End Produk Section -->
+<!-- Tentang Kami Section -->
+<section class="bg-base-200 py-12 lg:py-24 px-12 lg:px-0 gsi-healet-about" id="tentang-kami">
+<div class="container mx-auto grid grid-cols-1 md:grid-cols-[40%_55%] gap-20 lg:gap-[5%]">
+<div class="aspect-square relative">
+<div class="absolute -bottom-6 -left-6 w-full h-full bg-primary/75 rounded-xl z-0"></div>
+<div class="rounded-xl relative h-full w-full overflow-hidden z-10 shadow-xl">
+<img alt="Tentang Kami" class="w-full h-full object-fill hover:scale-110 transition-all duration-300 ease-in-out" src="https://images.unsplash.com/photo-1611212799142-e45b3a4fc47d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJpcmQlMjBjYWdlfGVufDB8MXwwfHx8Mg%3D%3D"/>
+</div>
+</div>
+<div class="w-full h-full">
+<span class="badge badge-primary px-5 py-4 text-white text-base lg:text-lg font-medium mb-4">Gallery Sangkar Indonesia</span>
+<h1 class="font-serif text-4xl md:text-6xl lg:text-8xl font-bold mb-8">Tentang Kami</h1>
+<p class="text-base lg:text-lg text-base-content mb-12">
+            Gallery Sangkar Indonesia adalah toko sangkar burung terpercaya yang menyediakan berbagai macam sangkar burung berkualitas tinggi dengan harga terjangkau. Kami mengutamakan desain yang menarik dan modern, menggunakan material
+            terbaik, serta dikerjakan oleh pengrajin berpengalaman. Setiap sangkar burung kami dibuat dengan teliti untuk memastikan kenyamanan burung peliharaan Anda. Dengan kombinasi harga bersaing, desain eksklusif, dan kualitas premium,
+            kami berkomitmen menjadi pilihan utama para pecinta burung dalam memilih sangkar yang tepat untuk koleksi mereka.
+          </p>
+<a class="btn btn-primary text-white" href="#temukan-kami">Temukan Kami <i class="bx bx-map text-lg"></i></a>
+</div>
+</div>
+</section>
+<!-- End Tentang Kami Section -->
+<!-- Temukan Kami Section -->
+<section class="min-h-screen bg-base-100 py-12 lg:py-24 px-12 lg:px-0 gsi-contact-space" id="temukan-kami">
+<div class="container grid grid-cols-1 md:grid-cols-[30%_70%] gap-8 mx-auto mt-12 lg:mt-20">
+<div>
+<h1 class="text-6xl lg:text-8xl font-semibold font-serif">Temukan Kami</h1>
+<p class="mt-6">Temukan kami di media sosial atau kunjungi toko offline kami untuk melihat koleksi sangkar burung berkualitas yang kami miliki.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="shadow-lg p-5 rounded-xl border-b-4 border-b-primary">
+<div class="bg-primary/75 w-20 h-20 flex justify-center items-center rounded-xl">
+<i class="bx bxl-facebook text-4xl text-white"></i>
+</div>
+<h4 class="text-2xl mt-4 font-semibold">Facebook</h4>
+<p class="text-lg mt-4">
+<a href="#">Gallery Sangkar Indonesia</a>
+</p>
+</div>
+<div class="shadow-lg p-5 rounded-xl border-b-4 border-b-primary">
+<div class="bg-primary/75 w-20 h-20 flex justify-center items-center rounded-xl">
+<i class="bx bxl-instagram text-4xl text-white"></i>
+</div>
+<h4 class="text-2xl mt-4 font-semibold">Instagram</h4>
+<p class="text-lg mt-4">
+<a href="#">@GallerySangkarIndonesia</a>
+</p>
+</div>
+<div class="shadow-lg p-5 rounded-xl border-b-4 border-b-primary">
+<div class="bg-primary/75 w-20 h-20 flex justify-center items-center rounded-xl">
+<i class="bx bxl-tiktok text-4xl text-white"></i>
+</div>
+<h4 class="text-2xl mt-4 font-semibold">TikTok</h4>
+<p class="text-lg mt-4">
+<a href="#">@GallerySangkarIndonesia</a>
+</p>
+</div>
+</div>
+</div>
+<div class="mapswrapper container mx-auto mt-20 w-full">
+<iframe allowfullscreen="" height="500" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&amp;q=Gallery%20Sangkar%20Indonesia,%20Jl.%20Prajurit%20Syakur,%20Parirejo,%20Parijatah%20Wetan,%20Kec.%20Srono,%20Kabupaten%20Banyuwangi,%20Jawa%20Timur&amp;zoom=10&amp;maptype=roadmap" width="600"></iframe><a href="https://www.zrivo.com/new-jersey-paycheck-calculator">New Jersey Paycheck Calculator</a><style>
+          .mapswrapper {
+            background: #fff;
+            position: relative;
+          }
+          .mapswrapper iframe {
+            border: 0;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+          }
+          .mapswrapper a {
+            color: rgba(0, 0, 0, 0);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+          }
+        </style>
+</div>
+</section>
+<!-- End Temukan Kami Section -->
+<!-- Footer Section -->
+<footer class="footer footer-center bg-primary text-white p-4">
+<aside>
+<p>Copyright © 2025 - Gallery Sangkar Indonesia</p>
+</aside>
+</footer>
+<!-- End Footer Section -->
+<!-- Custom JS -->
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
